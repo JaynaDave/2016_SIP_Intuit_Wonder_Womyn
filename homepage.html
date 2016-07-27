@@ -1,17 +1,18 @@
 
-	<!doctype html>
+<!doctype html>
 <head>
     <meta charset = "utf-8">
     <meta name = "viewport" content = "width=device-width, initial-scale=1">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type = "text/css" href="homepage.css">
+
 	
-	<link rel="stylesheet" type = "text/css" href="homepage.css">
     <script type="text/javascript"src="home.js"></script>
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
+    	
 <script> 
 	$(document).ready(function(){
   var mouseX, mouseY;
@@ -28,31 +29,136 @@
   });
 });
 		</script>
+    <script language="javascript" type="text/javascript">
+
+    // sets the caption for the clicked img
+    function caption(img){
+       // finds the element with an id="caption"
+       var ctrl = document.getElementById("caption");
+
+       // sets the text of the element = the alt property of the img
+       alert(img.alt);
+       ctrl.innerText = img.alt;
+
+       // sets the css display property = block (shows the element)
+       ctrl.style.display = "block";
+
+       // hides the defaultCaption element
+       document.getElementById("defaultCaption").style.display = "none";
+    }
+
+    // shows the defaultCaption and hides the caption div
+    function clearCaption() {
+       document.getElementById("defaultCaption").style.display = "block";
+       document.getElementById("caption").style.display = "none";
+    }
+ </script>
+
 		
 <body>
 
 
 	<ul>
 		<li><img src="wonderwomyn.png" id="logo" </a></li>
-  <li><a class="active" href="web.html">HOME</a></li>
-  <li><a href="aboutme.html">ABOUT ME</a></li>
-  <li><a href="spotify.html">MY PROJECTS</a></li>
-	<li><a href="involved.html">CONTACT</a></li>
+  <li><a class="active" href="homepage.html">HOME</a></li>
+  <li><a href="aboutme.html">EDUCATION</a></li>
+  <li><a href="spotify.html">JOBS</a></li>
+	<li><a href="involved.html">GET INVOLVED</a></li>
+ <li><a href="involved.html">ABOUT US</a></li>
 </ul>
 <div class="container">
  <div class="title">WONDER WOMYN</div>
-<!--	  <div class="subtitle"> PORTFOLIO OF A GIRL WHO CODES </div>-->
-</div>
-      <img id= "background" src="http://freetwitterheaders.net/wp-content/uploads/2012/12/Orange-Simple-Gradient.jpg" alt="grad">
-        
-        
-    <div class="multi_bg_example"></div>
-      <img id= "image1" src="https://s-media-cache-ak0.pinimg.com/236x/b5/ee/a7/b5eea725b882960e782209b15c7b1594.jpg" alt="GR stats">
-        
-  
+</div>  
 
 
+<img id="image1" src="https://s-media-cache-ak0.pinimg.com/236x/b5/ee/a7/b5eea725b882960e782209b15c7b1594.jpg" alt="GR stats">
     
+<img id="image2" src="https://share.america.gov/wp-content/uploads/2015/10/5246040202_867cfe1972_b-1024x483.jpg" alt="GR stats">
+    
+<img id="image3" src="https://s-media-cache-ak0.pinimg.com/564x/d1/25/9e/d1259e576accd1d65b883476b9fe92de.jpg" alt="GR stats">
+    
+<img id="image4" src="https://s-media-cache-ak0.pinimg.com/564x/5d/03/fb/5d03fb2fdcd9771e586343e2afcbd060.jpg" alt="GR stats">
+    
+<img id="image5" src="https://s-media-cache-ak0.pinimg.com/236x/ce/11/7a/ce117af6679155ed75fe4995ef533dd0.jpg" alt="GR stats">
+    
+<img id="image6" src="http://lipmag.com/wp-content/uploads/2013/10/Girl-Rising.png" alt="GR stats">
+<img id="image7" src="https://s-media-cache-ak0.pinimg.com/736x/8a/50/76/8a5076c61ae178ed5417ca4449b1f0e8.jpg" alt="GR stats">
+    
+<img id="image8" src="http://www.care.org/sites/default/files/image/Girls-Edu-Stats-07.jpg" alt="GR stats">
+    
+ <a href="file:///Users/jayna/Desktop/2016_SIP_Intuit_Wonder_Womyn/story1.html">
+<img id = "image9"src="https://pbs.twimg.com/media/Cdru229W4AAcUvw.jpg" alt="GWC">
+    </a> 
+    
+<a href="file:///Users/jayna/Desktop/2016_SIP_Intuit_Wonder_Womyn/story2.html">
+<img id = "image10"src="https://pbs.twimg.com/media/CcpHNAoW8AAYYrM.jpg" alt="GWC">
+    </a> 
+    
+    
+    <a href="file:///Users/jayna/Desktop/2016_SIP_Intuit_Wonder_Womyn/story3.html">
+<img id = "image11"src="http://s9.favim.com/orig/130920/book-notebook-paper-pen-Favim.com-938112.png" alt="GWC"> 
+    </a> 
+    
+    <a href="file:///Users/jayna/Desktop/2016_SIP_Intuit_Wonder_Womyn/story4.html">
+<img id = "image12"src="https://pbs.twimg.com/media/CkXTWzHUgAA7NQj.jpg" alt="GWC">
+    </a> 
+    
+    
+    <a href="file:///Users/jayna/Desktop/2016_SIP_Intuit_Wonder_Womyn/story5.html"> 
+<img id = "image13"src="https://s-media-cache-ak0.pinimg.com/736x/41/ee/71/41ee7117b436da2f38a8544180166b30.jpg">
+    </a> 
+    
+    <img id="image14" src="https://s-media-cache-ak0.pinimg.com/236x/e4/be/32/e4be32f4921ffa486548f5350d509efa.jpg" alt="GR stats"> 
+<!--
+<div class="row">
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="https://s-media-cache-ak0.pinimg.com/236x/b5/ee/a7/b5eea725b882960e782209b15c7b1594.jpg" alt="GR stats">
+    </a>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="https://share.america.gov/wp-content/uploads/2015/10/5246040202_867cfe1972_b-1024x483.jpg" alt="GR stats">
+    </a>
+  </div>
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="https://s-media-cache-ak0.pinimg.com/236x/b5/ee/a7/b5eea725b882960e782209b15c7b1594.jpg" alt="GR stats">
+    </a>
+  </div>
+            
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="https://s-media-cache-ak0.pinimg.com/564x/5d/03/fb/5d03fb2fdcd9771e586343e2afcbd060.jpg" alt="GR stats">
+    </a>
+  </div>
+               
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="https://s-media-cache-ak0.pinimg.com/236x/ce/11/7a/ce117af6679155ed75fe4995ef533dd0.jpg" alt="GR stats">
+    </a>
+  </div>
+                 
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="http://lipmag.com/wp-content/uploads/2013/10/Girl-Rising.png" alt="GR stats">
+    </a>
+  </div>
+                     
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="https://s-media-cache-ak0.pinimg.com/736x/8a/50/76/8a5076c61ae178ed5417ca4449b1f0e8.jpg" alt="GR stats">
+    </a>
+  </div>
+                         
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="http://www.care.org/sites/default/files/image/Girls-Edu-Stats-07.jpg" alt="GR stats">
+    </a>
+  </div>
+</div>
+-->
+
 
 </body>
 
