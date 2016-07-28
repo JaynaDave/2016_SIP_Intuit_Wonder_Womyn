@@ -1,0 +1,94 @@
+
+body{
+    background-image: url( http://www.astroblend.com/blenderFiles/sphericalMaps/largeGalField.jpg);
+}
+title{
+	font-weight: 600;
+  color: white;
+  font-size:120px;
+/*  background: white;*/
+/*  background-position: 40% 50%;*/
+/*
+    position: static;
+  -webkit-background-clip: text;
+    position: static;
+*/
+  text-align:center;
+  line-height:100px;
+
+  letter-spacing: -8px;
+}
+.subtitle{
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top:0px;
+  font-size: 18px
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: rgba(0,0,0,0.75);
+	position: fixed;
+	width: 100%;
+	left: 0%;
+	top: 0%;
+	right: 0%;
+	margin: 0px;
+	width: 100%;
+	z-index: 500;
+}
+.active {
+transform: #;
+}
+
+li {
+    position: sticky;
+	
+	float: left;
+/*	background: rgba(255,255,255,0.5);*/
+	
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px 40px;
+/*	background:rgba(255,255,255,0.5);*/
+}
+
+li a:hover:not(.active) {
+     font-style: bold;
+  transform: scale(1.2);
+
+}
+
+#logo{
+	max-height: 105px;
+	max-width: 165px;
+	position: sticky;
+}
+h1{
+color: white;
+text-align: center;
+font-family: 'Raleway', sans-serif;
+position: relative;
+font-size:80px;
+top:100px;
+}
+h2{
+    color: white;
+text-align: center;
+font-family: 'Raleway',sans-serif;
+font-weight: 200;
+position: relative;
+    font-size: 32px;
+
+}
+image{
+    border-color: black;
+}
+
