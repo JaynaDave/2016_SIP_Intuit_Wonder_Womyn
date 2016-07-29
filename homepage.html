@@ -1,4 +1,3 @@
-
 <!doctype html>
 <head>
     <meta charset = "utf-8">
@@ -30,23 +29,18 @@
 });
 		</script>
     <script language="javascript" type="text/javascript">
-
     // sets the caption for the clicked img
     function caption(img){
        // finds the element with an id="caption"
        var ctrl = document.getElementById("caption");
-
        // sets the text of the element = the alt property of the img
        alert(img.alt);
        ctrl.innerText = img.alt;
-
        // sets the css display property = block (shows the element)
        ctrl.style.display = "block";
-
        // hides the defaultCaption element
        document.getElementById("defaultCaption").style.display = "none";
     }
-
     // shows the defaultCaption and hides the caption div
     function clearCaption() {
        document.getElementById("defaultCaption").style.display = "block";
@@ -61,7 +55,13 @@
 	<ul>
 		<li><img src="wonderwomyn.png" id="logo" </a></li>
   <li><a class="active" href="homepage.html">HOME</a></li>
-  <li><a href="aboutme.html">EDUCATION</a></li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">EDUCATION</a>
+    <div class="dropdown-content">
+      <a href="#">INFORMATION</a>
+      <a href="#">FIND YOUR FA</a>
+    </div>
+  </li>
   <li><a href="spotify.html">JOBS</a></li>
 	<li><a href="involved.html">GET INVOLVED</a></li>
  <li><a href="involved.html">ABOUT US</a></li>
@@ -163,3 +163,4 @@
 </body>
 
 <html>
+
